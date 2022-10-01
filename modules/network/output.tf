@@ -9,3 +9,7 @@ output "vpc_cidr" {
 output "public_subnets_ids" {
   value = aws_subnet.public_subnets[*].id
 }
+
+output "env" {
+  value = var.env
+}
